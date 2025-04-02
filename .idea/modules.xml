@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java-from-scratch.iml" filepath="$PROJECT_DIR$/Java-from-scratch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VariablesAndBasicOperations2/VariablesAndBasicOperations2.iml" filepath="$PROJECT_DIR$/VariablesAndBasicOperations2/VariablesAndBasicOperations2.iml" />
     </modules>
   </component>
 </project>
