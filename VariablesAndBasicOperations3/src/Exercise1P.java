@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Exercise1P {
     public static void main(String[] args) {
 //        EXERCISE 1P
@@ -8,7 +10,14 @@ public class Exercise1P {
 //        d1 and d2. Then make use of the following formulas:
 
 
+        Scanner scanner = new Scanner(System.in);
 
+        int distance2Cities = 12;
+        int train1Speed = 60;
+        int train2Speed = 83;
+
+//        Time of encounter (or collision time) formula t = D/v1+v2
+//        Equation of Uniform Rectilinear Motion(URM) e = v * t
 
     }
 }
