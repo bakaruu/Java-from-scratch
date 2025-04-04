@@ -10,14 +10,24 @@ public class Exercise1P {
 //        d1 and d2. Then make use of the following formulas:
 
 
+        //If we ask to enter info.
         Scanner scanner = new Scanner(System.in);
 
-        int distance2Cities = 12;
-        int train1Speed = 60;
-        int train2Speed = 83;
+        // In Km km/h
+        double distance2Cities = 45;
+        double train1Speed = 60;
+        double train2Speed = 83;
 
 //        Time of encounter (or collision time) formula t = D/v1+v2
+        double time = distance2Cities / (train1Speed + train2Speed);
+//        System.out.println(time);
+
 //        Equation of Uniform Rectilinear Motion(URM) e = v * t
+        double displacement1 = train1Speed * time;
+        double displacement2 = train2Speed * time;
+        System.out.printf("Train 1 displacement: %.2f km\n", displacement1);
+        System.out.printf("Train 2 displacement: %.2f km\n", displacement2);
+
 
     }
 }
