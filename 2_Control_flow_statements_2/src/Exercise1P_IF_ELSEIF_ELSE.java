@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Exercise1P_IF_ELSEIF_ELSE {
     public static void main(String[] args) {
 
@@ -10,6 +12,18 @@ public class Exercise1P_IF_ELSEIF_ELSE {
 //        divisible by 100 and is also divisible by 400, it is also a leap
 //        year.
 
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a year: ");
+        int year = scanner.nextInt();
+
+        if (year <= 1582) {
+            System.out.println("Invalid year. Must be after 1582.");
+        } else if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println("NICE " + year + " is a leap year.");
+        } else {
+            System.out.println("WRONG " + year + " is not a leap year.");
+        }
 
     }
 }
