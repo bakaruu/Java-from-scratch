@@ -21,5 +21,7 @@ public class Exercise21A_SWITCH_CASE {
 //         If you don't have enough money ‘Sorry, we don't trust anyone’.
 //           Try to find the clearest and most efficient solution to this
 //           problem by separating input, process and output.
+
+
     }
 }
