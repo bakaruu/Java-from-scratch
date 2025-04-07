@@ -33,7 +33,7 @@ public class Exercise15R_IF_ELSEIF_ELSE {
         }
 
 
-        System.out.printf("📅 Next day: %02d/%02d/%d\n", day, month, year);
+        System.out.printf("Next day: %02d/%02d/%d\n", day, month, year);
 
     }
 }
