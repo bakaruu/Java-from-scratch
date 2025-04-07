@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercise_3P_SWITCH_CASE {
+public class Exercise3P_SWITCH_CASE {
     public static void main(String[] args) {
 //        EXERCISE 3P
 //        Ask for a number from 0 to 99 and display it in writing.
