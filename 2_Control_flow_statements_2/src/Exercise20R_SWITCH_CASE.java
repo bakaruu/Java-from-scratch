@@ -30,7 +30,7 @@ public class Exercise20R_SWITCH_CASE {
                 break;
 
             default:
-                System.out.println("❌ Error: Invalid day letter.");
+                System.out.println("Error: Invalid day letter.");
         }
     }
 }
