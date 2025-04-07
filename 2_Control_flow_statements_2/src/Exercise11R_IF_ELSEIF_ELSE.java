@@ -19,7 +19,6 @@ public class Exercise11R_IF_ELSEIF_ELSE {
 //         >40. Morbid obesity (grade IV obesity).
         Scanner scanner = new Scanner(System.in);
 
-
         System.out.print("Enter weight (kg): ");
         double weight = scanner.nextDouble();
 
