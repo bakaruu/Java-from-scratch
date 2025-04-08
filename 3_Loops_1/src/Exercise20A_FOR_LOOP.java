@@ -17,7 +17,7 @@ public class Exercise20A_FOR_LOOP {
         System.out.print("Enter the length of each password: ");
         int length = scanner.nextInt();
 
-        System.out.println("\n🔐 Generated passwords:");
+        System.out.println("\nGenerated passwords:");
 
         for (int i = 1; i <= count; i++) {
             String password = "";
