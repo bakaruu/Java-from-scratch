@@ -16,6 +16,7 @@ public class Exercise17A_FOR_LOOP {
 
 
         for (int i = 0; i < length; i++) {
+            //we need it to cast it into a char to get a letter.
             char randomLetter = (char) (random.nextInt(26) + 'a');
             password += randomLetter;
         }
