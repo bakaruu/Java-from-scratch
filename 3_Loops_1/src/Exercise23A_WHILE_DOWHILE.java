@@ -14,5 +14,8 @@ public class Exercise23A_WHILE_DOWHILE {
             System.out.print("Enter a number between 0 and 10: ");
             number = scanner.nextDouble();
         } while (number < 0 || number > 10);
+
+        //DONE
+
     }
 }
