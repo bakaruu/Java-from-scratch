@@ -24,7 +24,7 @@ public class Exercise28A_WHILE_DOWHILE {
             attempts++;
         } while (!(number % 2 == 0 && Math.abs(number) % 10 == 2 && Math.abs(number) >= 10));
 
-//        Check how many attempts it took
+
         if (attempts == 1) {
             System.out.println("You're a crack");
         } else if (attempts >= 5) {
