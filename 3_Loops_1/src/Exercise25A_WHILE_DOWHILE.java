@@ -31,6 +31,7 @@ public class Exercise25A_WHILE_DOWHILE {
         if (allPositive) {
             System.out.println("All numbers were positive. Goal achieved!");
         }
+        //done
 
 
 
