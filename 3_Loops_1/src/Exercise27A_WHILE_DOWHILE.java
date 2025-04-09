@@ -13,16 +13,21 @@ public class Exercise27A_WHILE_DOWHILE {
         boolean foundZero = true;
         int count = 0;
 
-        do {
-            System.out.print("Enter number " + (count + 1) + ": ");
-            int number = scanner.nextInt();
+        //The differences about do and do while.
+        if (n > 0) {
+            do {
+                System.out.print("Enter number " + (count + 1) + ": ");
+                int number = scanner.nextInt();
 
-            if (number == 0) {
-                foundZero = false;
-                System.out.println("Zero number detected.");
-            }
+                if (number == 0) {
+                    foundZero = false;
+                    System.out.println("Zero number detected.");
+                }
 
-            count++;
-        }while (count < n && foundZero);
+                count++;
+            } while (count < n && foundZero);
+        } else {
+            System.out.println("Nothing to check.");
+        }
     }
 }
