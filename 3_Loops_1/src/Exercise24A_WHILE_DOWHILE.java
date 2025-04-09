@@ -36,6 +36,7 @@ public class Exercise24A_WHILE_DOWHILE {
         System.out.println("Uppercase letters: " + upperCount);
         System.out.println("Lowercase letters: " + lowerCount);
         System.out.println("Digits: " + digitCount);
+        //DONE
 
     }
 }
