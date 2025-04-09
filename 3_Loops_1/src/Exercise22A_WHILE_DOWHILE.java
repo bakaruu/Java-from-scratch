@@ -13,5 +13,7 @@ public class Exercise22A_WHILE_DOWHILE {
             System.out.println("Enter a number: ");
             number = scanner.nextInt();
         }while(number<0);
+        //DONE
+
     }
 }
