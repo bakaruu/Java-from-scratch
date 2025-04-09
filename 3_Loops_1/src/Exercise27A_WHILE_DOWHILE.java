@@ -13,7 +13,7 @@ public class Exercise27A_WHILE_DOWHILE {
         boolean foundZero = true;
         int count = 0;
 
-        //The differences about do and do while.
+        //The differences about do and do while
         if (n > 0) {
             do {
                 System.out.print("Enter number " + (count + 1) + ": ");
