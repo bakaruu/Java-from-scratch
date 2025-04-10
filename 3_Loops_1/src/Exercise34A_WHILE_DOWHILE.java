@@ -109,7 +109,7 @@ public class Exercise34A_WHILE_DOWHILE {
                         System.out.println("Result: " + result);
                     } else {
                         // Exit when power is not unlocked
-                        System.out.println("👋 Exiting...");
+                        System.out.println("Exiting...");
                         exit = true;
                     }
                     break;
@@ -119,7 +119,7 @@ public class Exercise34A_WHILE_DOWHILE {
                         System.out.println("Invalid option.");
                         continue;
                     } else {
-                        System.out.println("👋 Exiting...");
+                        System.out.println("Exiting...");
                         exit = true;
                     }
                     break;
