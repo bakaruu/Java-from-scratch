@@ -11,6 +11,22 @@ public class Exercise1P_LOOPS {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number to check if is perfect: ");
         int number = scanner.nextInt();
+        int sum= 0;
+
+        for (int i= 1; i<number; i++ ){
+            if (number % i == 0) {
+                sum+=i;
+//                System.out.println(i);
+            }
+        }
+        if(sum== number){
+            System.out.printf("The number %d is perfect", number);
+        }else{
+
+            System.out.printf("The number %d is NOT perfect", number);
+        }
+
+
 
 
     }
