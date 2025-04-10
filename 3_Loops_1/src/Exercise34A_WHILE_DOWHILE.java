@@ -36,7 +36,7 @@ public class Exercise34A_WHILE_DOWHILE {
             System.out.println("2) Subtraction");
             System.out.println("3) Multiplication");
             System.out.println("4) Division");
-            System.out.println("5) Subtraction"); // (Maybe originally intended as 'Modulo')
+            System.out.println("5) Module");
             if (powerUnlocked) {
                 System.out.println("6) Power");
                 System.out.println("7) Exit");
@@ -60,8 +60,8 @@ public class Exercise34A_WHILE_DOWHILE {
                     System.out.println("Result: " + result);
                     break;
 
-                case 2: // Subtraction (first subtraction option)
-                case 5: // Subtraction (second subtraction option)
+
+                case 2:
                     System.out.print("Enter first number: ");
                     a = scanner.nextDouble();
                     System.out.print("Enter second number: ");
@@ -95,6 +95,20 @@ public class Exercise34A_WHILE_DOWHILE {
                     } else {
                         System.out.println("Error: Division by zero.");
                         continue; // This restarts the do-while loop without updating result
+                    }
+                    break;
+
+                case 5: // Module
+                    System.out.print("Enter first number: ");
+                    a = scanner.nextDouble();
+                    System.out.print("Enter second number: ");
+                    b = scanner.nextDouble();
+                    if (b != 0) {
+                        result = a % b;
+                        System.out.println("Result: " + result);
+                    } else {
+                        System.out.println("Error: Modulo by zero is not allowed.");
+                        continue;
                     }
                     break;
 
