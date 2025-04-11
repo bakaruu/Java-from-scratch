@@ -19,7 +19,7 @@ public class Exercise3P_LOOPS {
         int a = 0;
         int b = 1;
 
-        System.out.println("Fibonacci series up to " + number + ":");
+        System.out.println("Fibonacci series up to " + number + " terms:");
 
         for (int i = 0; i <number; i++) {
             System.out.print(a + " ");
