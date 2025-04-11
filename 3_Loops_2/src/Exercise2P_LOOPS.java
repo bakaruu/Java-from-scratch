@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Exercise2P_LOOPS {
     public static void main(String[] args) {
 //        EXERCISE 2P
@@ -9,6 +11,39 @@ public class Exercise2P_LOOPS {
 //        For example, 6 cans would be stackable (1+2+3), 10 cans would be
 //        stackable (1+2+3+4), 9 cans would not be possible.
 
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of cans you have: ");
+        int cans = scanner.nextInt();
+
+        int sum = 0;
+
+        for (int i = 1; i <= cans; i++) {
+            sum += i;
+            if (sum == cans) {
+                System.out.printf("%d cans would be stackable", cans);
+                return;
+            }
+        }
+
+        System.out.println("Not possible.");
+
+//        Better version, avoids unnecessary iterations by stopping the loop
+//        as soon as the sum surpasses the number of cans
+
+//        int sum = 0;
+//        int i = 1;
+//
+//        while (sum < cans) {
+//            sum += i;
+//            if (sum == cans) {
+//                System.out.printf("%d cans would be stackable%n", cans);
+//                return;
+//            }
+//            i++;
+//        }
+//
+//        System.out.println("Not possible.");
 
     }
 }
