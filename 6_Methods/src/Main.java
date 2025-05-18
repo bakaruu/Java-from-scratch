@@ -1,5 +1,6 @@
 import Utilities.BasicUtilities;
 import ArrayUtilities.ArrayUtilities;
+import ArrayUtilities.ArrayOperations;
 
 
 public class Main {
@@ -47,7 +48,61 @@ public class Main {
         System.out.println("Only zeros? " + ArrayUtilities.hasOnlyZeros(new int[]{0, 0, 0}));
         System.out.println("Only zeros? " + ArrayUtilities.hasOnlyZeros(intArray));
 
+//        Exercise 3
 
+        int[] a = {2, 5, 6};
+        int[] b = {-1, 7, 4};
+
+        System.out.println("=== maxArray ===");
+        int[] max = ArrayOperations.maxArray(a, b);
+        for (int i = 0; i < max.length; i++) {
+            System.out.print(max[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("\n=== replace ===");
+        int[] toReplace = {1, 5, 8, 1, 7, 8};
+        ArrayOperations.replace(toReplace, 8, 3);
+        for (int i = 0; i < toReplace.length; i++) {
+            System.out.print(toReplace[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("\n=== reverse (int[]) ===");
+        int[] reversedInt = ArrayOperations.reverse(a);
+        for (int i = 0; i < reversedInt.length; i++) {
+            System.out.print(reversedInt[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("\n=== reverse (String[]) ===");
+        String[] words = {"apple", "banana", "cherry"};
+        String[] reversedStr = ArrayOperations.reverse(words);
+        for (int i = 0; i < reversedStr.length; i++) {
+            System.out.print(reversedStr[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("\n=== sumArrays ===");
+        int[] sum = ArrayOperations.sumArrays(a, b);
+        for (int i = 0; i < sum.length; i++) {
+            System.out.print(sum[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("\n=== transpose ===");
+        int[][] matrix = {
+                {1, 2, 3},
+                {4, 5, 6}
+        };
+
+        int[][] transposed = ArrayOperations.transpose(matrix);
+        for (int i = 0; i < transposed.length; i++) {
+            for (int j = 0; j < transposed[0].length; j++) {
+                System.out.print(transposed[i][j] + " ");
+            }
+            System.out.println();
+        }
 
 
     }
