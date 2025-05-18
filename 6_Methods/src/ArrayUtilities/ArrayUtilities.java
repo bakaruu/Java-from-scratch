@@ -15,45 +15,53 @@ public class ArrayUtilities {
 //    7) Develop a method that given an array of integers returns whether it has only zeros or not.
 
     public static String intArrayToString(int[] array) {
-        StringBuilder sb = new StringBuilder();
-        for (int value : array) {
-            sb.append(value).append(" ");
+        String result = "";
+        for (int i = 0; i < array.length; i++) {
+            result = result + array[i];
+            if (i != array.length - 1) {
+                result = result + " ";
+            }
         }
-        return sb.toString().trim();
+        return result;
     }
 
     public static String doubleArrayToString(double[] array) {
-        StringBuilder sb = new StringBuilder();
-        for (double value : array) {
-            sb.append(value).append(" ");
+        String result = "";
+        for (int i = 0; i < array.length; i++) {
+            result = result + array[i];
+            if (i != array.length - 1) {
+                result = result + " ";
+            }
         }
-        return sb.toString().trim();
+        return result;
     }
 
     public static int sum(int[] array) {
         int total = 0;
-        for (int value : array) {
-            total += value;
+        for (int i = 0; i < array.length; i++) {
+            total = total + array[i];
         }
         return total;
     }
+
 
     public static double sum(double[] array) {
         double total = 0;
-        for (double value : array) {
-            total += value;
+        for (int i = 0; i < array.length; i++) {
+            total = total + array[i];
         }
         return total;
     }
 
+
     public static int max(int[] array) {
-        int maxValue = array[0];
-        for (int value : array) {
-            if (value > maxValue) {
-                maxValue = value;
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
             }
         }
-        return maxValue;
+        return max;
     }
 
     public static int indexOf(int[] array, int number) {
@@ -75,8 +83,8 @@ public class ArrayUtilities {
     }
 
     public static boolean hasOnlyZeros(int[] array) {
-        for (int value : array) {
-            if (value != 0) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != 0) {
                 return false;
             }
         }
