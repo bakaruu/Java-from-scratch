@@ -50,60 +50,62 @@ public class Main {
 
 //        Exercise 3
 
-        int[] a = {2, 5, 6};
-        int[] b = {-1, 7, 4};
+        int[] array1 = {2, 5, 6};
+        int[] array2 = {-1, 7, 4};
 
-        System.out.println("=== maxArray ===");
-        int[] max = ArrayOperations.maxArray(a, b);
-        for (int i = 0; i < max.length; i++) {
-            System.out.print(max[i] + " ");
-        }
-        System.out.println();
+        System.out.println("=== maxValuesAtEachPosition ===");
+        int[] maxResult = ArrayOperations.maxValuesAtEachPosition(array1, array2);
+        printIntArray(maxResult);
 
-        System.out.println("\n=== replace ===");
-        int[] toReplace = {1, 5, 8, 1, 7, 8};
-        ArrayOperations.replace(toReplace, 8, 3);
-        for (int i = 0; i < toReplace.length; i++) {
-            System.out.print(toReplace[i] + " ");
-        }
-        System.out.println();
+        System.out.println("\n=== replaceOccurrences ===");
+        int[] original = {1, 5, 8, 1, 7, 8};
+        ArrayOperations.replaceOccurrences(original, 8, 3);
+        printIntArray(original);
 
-        System.out.println("\n=== reverse (int[]) ===");
-        int[] reversedInt = ArrayOperations.reverse(a);
-        for (int i = 0; i < reversedInt.length; i++) {
-            System.out.print(reversedInt[i] + " ");
-        }
-        System.out.println();
+        System.out.println("\n=== invertIntArray ===");
+        int[] invertedInt = ArrayOperations.invertIntArray(array1);
+        printIntArray(invertedInt);
 
-        System.out.println("\n=== reverse (String[]) ===");
-        String[] words = {"apple", "banana", "cherry"};
-        String[] reversedStr = ArrayOperations.reverse(words);
-        for (int i = 0; i < reversedStr.length; i++) {
-            System.out.print(reversedStr[i] + " ");
-        }
-        System.out.println();
+        System.out.println("\n=== invertStringArray ===");
+        String[] strings = {"apple", "banana", "cherry"};
+        String[] invertedStrings = ArrayOperations.invertStringArray(strings);
+        printStringArray(invertedStrings);
 
         System.out.println("\n=== sumArrays ===");
-        int[] sum = ArrayOperations.sumArrays(a, b);
-        for (int i = 0; i < sum.length; i++) {
-            System.out.print(sum[i] + " ");
-        }
-        System.out.println();
+        int[] sumResult = ArrayOperations.sumArrays(array1, array2);
+        printIntArray(sumResult);
 
-        System.out.println("\n=== transpose ===");
+        System.out.println("\n=== transposeMatrix ===");
         int[][] matrix = {
                 {1, 2, 3},
                 {4, 5, 6}
         };
+        int[][] transposed = ArrayOperations.transposeMatrix(matrix);
+        printMatrix(transposed);
+    }
 
-        int[][] transposed = ArrayOperations.transpose(matrix);
-        for (int i = 0; i < transposed.length; i++) {
-            for (int j = 0; j < transposed[0].length; j++) {
-                System.out.print(transposed[i][j] + " ");
+    public static void printIntArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printStringArray(String[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void printMatrix(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
-
-
     }
+
+
 }

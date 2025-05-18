@@ -19,7 +19,7 @@ public class ArrayOperations {
 //    5) Develop a method which, given an array of integers, returns the matrix transpose.
 
 
-    public static int[] maxArray(int[] a, int[] b) {
+    public static int[] maxValuesAtEachPosition(int[] a, int[] b) {
         int[] result = new int[a.length];
         for (int i = 0; i < a.length; i++) {
             if (a[i] > b[i]) {
@@ -31,7 +31,7 @@ public class ArrayOperations {
         return result;
     }
 
-    public static void replace(int[] array, int from, int to) {
+    public static void replaceOccurrences(int[] array, int from, int to) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == from) {
                 array[i] = to;
@@ -39,7 +39,7 @@ public class ArrayOperations {
         }
     }
 
-    public static int[] reverse(int[] array) {
+    public static int[] invertIntArray(int[] array) {
         int[] inverted = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             inverted[i] = array[array.length - 1 - i];
@@ -47,7 +47,7 @@ public class ArrayOperations {
         return inverted;
     }
 
-    public static String[] reverse(String[] array) {
+    public static String[] invertStringArray(String[] array) {
         String[] inverted = new String[array.length];
         for (int i = 0; i < array.length; i++) {
             inverted[i] = array[array.length - 1 - i];
@@ -63,7 +63,7 @@ public class ArrayOperations {
         return result;
     }
 
-    public static int[][] transpose(int[][] matrix) {
+    public static int[][] transposeMatrix(int[][] matrix) {
         int rows = matrix.length;
         int cols = matrix[0].length;
         int[][] transposed = new int[cols][rows];
